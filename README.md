@@ -36,7 +36,7 @@ The first step to using Hyperengine is having it "installed" to Unity. Hyperengi
 
 After getting the Hyperengine file on your computer, the next step is to create a unity project and then close it. 
 
-<img src="(https://github.com/NikitaGallegos/HyperengineQS/blob/main/Install1.gif)" width="200" height="200" />
+<img src="(https://github.com/NikitaGallegos/HyperengineQS/blob/main/Install1.gif)" width="500" height="500" />
 
 
 Finally, take the Hyperengine file and drop it directly into the assets folder of your unity project using your file manager. Because of the file structure of Hyperengine, Unity will recognize it as a package and treat it as such. Thus Hyperengine is "installed" into Unity. 

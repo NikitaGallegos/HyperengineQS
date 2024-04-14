@@ -38,6 +38,7 @@ After getting the Hyperengine file on your computer, the next step is to create 
 
 <img src="https://github.com/NikitaGallegos/HyperengineQS/blob/main/Install1.gif" width="800" height="400" />
 
+<img src="https://github.com/NikitaGallegos/HyperengineQS/blob/main/Install2.gif" width="800" height="400" />
 
 Finally, take the Hyperengine file and drop it directly into the assets folder of your unity project using your file manager. Because of the file structure of Hyperengine, Unity will recognize it as a package and treat it as such. Thus Hyperengine is "installed" into Unity. 
 
@@ -92,6 +93,8 @@ When building a non-euclidean world in Hyperengine it is best to refer to these 
 
 With Hyperengine installed it is time to build your first non-euclidean world. Begin by copying the DebugWorld, DebugBuilder, and RandomFloor from the Hyperengine debug file (Filepath: Assets/Hyperengine/Debug). Place the copies in their own folder in Hyperengine. Rename the copies to whatever you wish. Make sure to change the class name in the code itself as well. Create a plane object to be the floor tiles for the renamed DebugBuilder. 
 
+<img src="https://github.com/NikitaGallegos/HyperengineQS/blob/main/Create_Seperate_World.gif" width="800" height="400" />
+
 *Note:* Copying over the debugTile object instead of creating a plane also works
 
 Load in the scene by clicking your renamed version of DebugWorld. Set a space for builder file to create by inputting the argument for HM.SetTileType(). Input 3 for spherical space. Input 4 for nornal euclidean space, Input 5-6 to get Hyperbolic space. 
@@ -102,6 +105,8 @@ Load in the scene by clicking your renamed version of DebugWorld. Set a space fo
 | 3             | Spherical     |
 | 4             | Normal        |
 | 5-6           | Hyperbolic    |
+
+<img src="https://github.com/NikitaGallegos/HyperengineQS/blob/main/SetTileType.gif" width="800" height="400" />
 
 Then modify the RandomFloor function, using the typical Unity texture and color class to create the tiles that will be the floor of the space. Click the playtest button and go to the game tab. The virtual world should clearly be rendering the space set in the builder file. It is ready to be populated by hyper objects to form a non-euclidean game.
 
@@ -131,11 +136,15 @@ It is now time to fill your non-euclidean space with Unity objects and build you
 
 The next step is to create the child object that will exist in the game. Right click the parent you made and navigate down to the object you want to create. Now the object is the child. Left click on the parent to see it's children. Click on the child object. Add the warp collider and set texture components to the object. Lastly, delete the non warp collider component.
 
+<img src="https://github.com/NikitaGallegos/HyperengineQS/blob/main/Parent-Child.gif" width="800" height="400" />
+
 The child object will now render in the non-euclidean space. If you want to change the object's postion by a small amount, edit its transform component. Otherwise, to largely change the position of a hyper object navigate to it's parent. From there go to the hyper object component. In the hyper object component is the gyr coordinate, change the gry coordinate to move the position of the parent and it's children. 
 
 *Note:* Do not trust the scene editor display. Where objects appear in the editor are hardly where they actually are in the non-euclidean space. 
 
 *Note:* Hyper objects are landlocked to the current tile they reside on unless the gyrovector of the parent is changed. 
+
+<img src="https://github.com/NikitaGallegos/HyperengineQS/blob/main/Change_Positions.gif" width="800" height="400" />
 
 The final step is to add warp colliders. Find the child object and navigate to the warp collider component. In the warp collider you will see six tabs with numbers next to them.
 
@@ -148,6 +157,8 @@ The final step is to add warp colliders. Find the child object and navigate to t
 The tabs describe a collider's shape and the number is how many colliders are already applied. Click on the tab you believe to be necessary. Click the "+" button. A box will appear in the warp collider component, this box has inputs for the colliders position and size. Furthermore, the collider will appear in the scene as a green outline. Change the inputs the box to manipulate the collider to your liking. To remove any colliders simply click "-" under it's associated box.
 
 *Note:* The “remove triang” checkbox indicates to Hyperengine to ignore colliders in direct contact with the floor because the player will never be able to touch them.
+
+<img src="https://github.com/NikitaGallegos/HyperengineQS/blob/main/Warp_Colliders.gif" width="800" height="400" />
 
 *Note:* Constantly redoing all these steps for each object added to the game can be overwhelming. Create and use prefabs out of the existing hyper objects to preset these steps.  
 

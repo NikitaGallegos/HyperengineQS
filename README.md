@@ -35,7 +35,7 @@ The sections 3 and 4 are divided into subsections, a background and guide. The b
 The first step to using Hyperengine is having it "installed" to Unity. Hyperengine is not an official unity package nor is it a community published package. You will not be able to search for it in the Asset Store or the Unity Registry to download it. You will have to visit it's GitHub page (https://github.com/HackerPoet/HyperEngine). You can clone your own local repository on to your machine using your preferred method. If you do not want to create a local repository, you can also download the zip file from the code tab. 
 
 After getting the Hyperengine file on your computer, the next step is to create a unity project and then close it. 
-![alt text](https://github.com/NikitaGallegos/HyperengineQS/Install1 "Installing Part 1")
+![alt text](https://github.com/NikitaGallegos/HyperengineQS/blob/main/Install1.gif "Install Part 1")
 Finally, take the Hyperengine file and drop it directly into the assets folder of your unity project using your file manager. Because of the file structure of Hyperengine, Unity will recognize it as a package and treat it as such. Thus Hyperengine is "installed" into Unity. 
 
 *Note:* Similarly to any other package, if you want to use another package inside the Hyperengine file itself you will have to modify the assembly file to include that packages name. 
